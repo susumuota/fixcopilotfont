@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+
+  "name": "Fix Copilot Font",
+  "version": "1.0.0",
+  "description": "Fix Copilot's font to be the same as ChatGPT.",
+  "author": "Susumu OTA",
+  "homepage_url": "https://github.com/susumuota/fixcopilotfont",
+
+  "content_scripts": [
+    {
+      "matches": [
+        "https://copilot.microsoft.com/*",
+        "https://www.bing.com/search*"
+      ],
+      "css": ["style.css"]
+    }
+  ]
+}
